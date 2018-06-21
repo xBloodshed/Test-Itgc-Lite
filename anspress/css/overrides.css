@@ -1,0 +1,142 @@
+/*----------VARIABLES----------*/
+:root {
+	--button-color: #d74d4d;
+	--main-a-color: #d74d4d;
+	--sec-a-color: #585cbc;
+	--ter-a-color: #47d6ff;
+	--main-font-color: #1d1f37;
+	--table-border: #d6e2e9;
+}
+
+/*-------------- ANSPRESS EDITS-------------*/
+.single-question #sidebar {display:none;}
+
+#anspress {background: none;}
+#main-content .container.ans-container {padding-top: 10px;}
+#anspress .ap-list-head {
+    padding: 15px 15px 5px 15px;
+    border: none;
+    margin-bottom: 10px;
+}
+#anspress .ap-questions-item {
+    border-bottom: 1px solid rgba(0,0,0,0.08);
+    background: #fff;
+    box-shadow: none;
+    display: table;
+    margin: 0;
+    padding: 15px 15px;
+    width: 100%;
+    position: relative;
+}
+.ap-avatar img {border-radius: 3px;}
+#anspress .ap-breadcrumbs>li a {color: var(--sec-a-color);}
+#anspress .ap-list-head .ap-btn-ask {background: var(--button-color);}
+#anspress .ap-filter-toggle {color: var(--sec-a-color);}
+#anspress .ap-questions-count.ap-questions-acount {border-color: var(--ter-a-color);}
+#anspress .ap-questions-title a {color: var(--main-font-color);}
+#anspress .ap-cell-inner {background: #fff;border: 2px solid #d6e2e9;}
+.ap-vote a,.ap-vote a:visited {color: var(--main-font-color);}
+.ap-question-meta{text-align:center;padding:10px;}
+.ap-display-meta-item {padding: 10px;}
+.ap-question-meta i {
+    font-style: normal;
+    color: #fdd835;
+    padding: 5px;
+    font-size: 1.5em;
+}
+.ap-display-meta-item .apicon-pulse:before {
+    content: "";
+    position: relative;
+    top: 2px;
+}
+.ap-display-meta-item .apicon-eye:before {
+    content: "";
+    font-size: 1.2em;
+    position: relative;
+    top: 3px;
+}
+.ap-sorting-tab {border-bottom: solid 1px #d6e2e9;}
+.ap-sorting-tab ul#answers-order {padding-bottom:0}
+#ap-answers-c .ap-answers-tab>li a {color: #658892;}
+#ap-answers-c .ap-answers-tab>li a:hover {background: #d6e2e9;}
+#ap-answers-c .ap-answers-tab li.active a {
+	border: solid 1px #d6e2e9;
+    border-bottom-color: #f1f8fa;
+}
+#ap-answers-c .ap-answers-tab li.active a:hover {background:none}
+.ap-all-answers {color: var(--sec-a-color); border: solid 1px var(--sec-a-color);}
+
+
+#anspress .ap-bp-head {
+    border-bottom: solid 1px var(--table-border);
+    margin-bottom: 25px;
+    padding-bottom: 10px;
+}
+#anspress .ap-bpsingle {
+    border-radius: 3px;
+    margin-bottom: 30px;
+    border: solid 1px var(--table-border);
+    background: #ffffff;
+	-webkit-box-shadow: 0 0 6px var(--table-border);
+    -moz-box-shadow: 0 0 6px var(--table-border);
+    box-shadow: 0 0 6px var(--table-border);
+}
+
+#anspress .ap-bpsingle-meta {
+    border-top: solid 1px var(--table-border);
+}
+#anspress .ap-bpsingle-meta .ap-post-history a, #anspress .ap-bpsingle-meta .ap-post-history a:visited {color:var(--ter-a-color)}
+#anspress .ap-view-question {
+    background: #8bc34a;
+    font-size: 12px;
+    color: #fff;
+    padding: 3px 10px;
+    border-radius: 3px;
+    text-decoration: none;
+    margin-top: 8px;
+    display: table;
+}
+#anspress .ap-view-question:hover {background:var(--ter-a-color)}
+
+#anspress .ap-modal-body {margin-top: 250px;}
+/*REPUTATION*/
+.ap-reputations td {border-color: var(--table-border);}
+.ap-reputation-activity {color: var(--sec-a-color);}
+.ap-reputations td.col-date {color: var(--ter-a-color);}
+
+/*WIDGETS*/
+#left-area ul.ap-stats-widget {
+    padding: 20px 30px;
+	border: solid 1px #fdd835;
+    background: #fdd835;
+}
+.widget .ap-stats-widget li, .ap-widget-pos .ap-stats-widget li {
+    border-bottom: 1px solid #fdd835;
+    font-size: 16px;
+    list-style: outside none none;
+    margin: 0;
+    padding: 10px;
+    color: #1d1f37;
+}
+.widget .ap-stats-widget li .stat-label, .ap-widget-pos .ap-stats-widget li .stat-label {font-weight: 700;}
+.widget .ap-stats-widget li .stat-label:before, .ap-widget-pos .ap-stats-widget li .stat-label:before {color: #1d1f37;}
+.widget .ap-stats-widget li .stat-value, .ap-widget-pos .ap-stats-widget li .stat-value {
+    color: #1d1f37;
+    border-bottom: 1px dotted #1d1f37;
+    font-size: .95em;
+}
+
+/*** Expand the content area to fullwidth ***/
+@media (min-width: 981px){
+.single-question #left-area {
+    width: 100%;
+    padding: 23px 0px !important;
+    float: none !important;
+}
+}
+@media only screen and (max-width: 480px){
+	.ap-question-meta i {
+    padding: 3px;
+    font-size: .75em;
+	}
+}
